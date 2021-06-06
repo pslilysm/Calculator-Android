@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_00"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cv_0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="00"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="28dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:layout_constraintBottom_toBottomOf="@id/cv_00"
+        app:layout_constraintEnd_toStartOf="@id/cv_dot"
+        app:layout_constraintStart_toEndOf="@id/cv_00">
+
+        <TextView
+            android:id="@+id/tv_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="0"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_dot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="28dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:layout_constraintBottom_toBottomOf="@id/cv_00"
+        app:layout_constraintEnd_toStartOf="@id/cv_equal"
+        app:layout_constraintStart_toEndOf="@id/cv_0">
+
+        <TextView
+            android:id="@+id/tv_dot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="."
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_equal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/green_200"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="@id/cv_00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cv_dot">
+
+        <TextView
+            android:id="@+id/tv_equal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="="
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toTopOf="@id/cv_00"
+        app:layout_constraintEnd_toStartOf="@id/cv_2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="28dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:layout_constraintBottom_toBottomOf="@id/cv_1"
+        app:layout_constraintEnd_toStartOf="@id/cv_3"
+        app:layout_constraintStart_toEndOf="@id/cv_1">
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="2"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="28dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:layout_constraintBottom_toBottomOf="@id/cv_1"
+        app:layout_constraintEnd_toStartOf="@id/cv_add"
+        app:layout_constraintStart_toEndOf="@id/cv_2">
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="3"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/green_200"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="@id/cv_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cv_3">
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="+"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toTopOf="@id/cv_1"
+        app:layout_constraintEnd_toStartOf="@id/cv_5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="4"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="28dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:layout_constraintBottom_toBottomOf="@id/cv_4"
+        app:layout_constraintEnd_toStartOf="@id/cv_6"
+        app:layout_constraintStart_toEndOf="@id/cv_4">
+
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="5"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="28dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:layout_constraintBottom_toBottomOf="@id/cv_4"
+        app:layout_constraintEnd_toStartOf="@id/cv_minus"
+        app:layout_constraintStart_toEndOf="@id/cv_5">
+
+        <TextView
+            android:id="@+id/tv_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="6"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_minus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/green_200"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="@id/cv_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cv_6">
+
+        <TextView
+            android:id="@+id/tv_minus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="–"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toTopOf="@id/cv_4"
+        app:layout_constraintEnd_toStartOf="@id/cv_8"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="7"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="28dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:layout_constraintBottom_toBottomOf="@id/cv_7"
+        app:layout_constraintEnd_toStartOf="@id/cv_9"
+        app:layout_constraintStart_toEndOf="@id/cv_7">
+
+        <TextView
+            android:id="@+id/tv_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="8"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="28dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:layout_constraintBottom_toBottomOf="@id/cv_7"
+        app:layout_constraintEnd_toStartOf="@id/cv_x"
+        app:layout_constraintStart_toEndOf="@id/cv_8">
+
+        <TextView
+            android:id="@+id/tv_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="9"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_x"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/green_200"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="@id/cv_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cv_9">
+
+        <TextView
+            android:id="@+id/tv_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="×"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_c"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toTopOf="@id/cv_7"
+        app:layout_constraintEnd_toStartOf="@id/cv_percent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="C"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_percent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="28dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:layout_constraintBottom_toBottomOf="@id/cv_c"
+        app:layout_constraintEnd_toStartOf="@id/cv_backspace"
+        app:layout_constraintStart_toEndOf="@id/cv_c">
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="%"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_backspace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="28dp"
+        app:cardBackgroundColor="@color/blue_200"
+        app:layout_constraintBottom_toBottomOf="@id/cv_c"
+        app:layout_constraintEnd_toStartOf="@id/cv_divide"
+        app:layout_constraintStart_toEndOf="@id/cv_percent"
+        app:layout_constraintTop_toTopOf="@id/cv_c">
+
+        <FrameLayout
+            android:id="@+id/fl_backspace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_backspace_black_24dp" />
+
+        </FrameLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_divide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@color/green_200"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="@id/cv_c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cv_backspace">
+
+        <TextView
+            android:id="@+id/tv_divide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:text="÷"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_formula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/tv_ret">
+
+        <TextView
+            android:id="@+id/tv_formula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="8dp"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
+            android:textColor="?attr/textColorPrimary" />
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_ret"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical|end"
+        android:paddingVertical="8dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        app:layout_constraintBottom_toTopOf="@id/cv_c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
